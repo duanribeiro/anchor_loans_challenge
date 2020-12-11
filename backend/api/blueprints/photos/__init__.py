@@ -1,3 +1,3 @@
-from flask_restplus import Resource, Namespace
+from flask_restplus import Namespace
 
 api = Namespace('photos', 'Game')

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint
 from flask_restplus import Api
-from api.blueprints.game.routes import api as namespace_questions
+from api.blueprints.photos.routes import api as namespace_photos
 from api.blueprints.auth.routes import api as namespace_auth
 
 v1_blueprint = Blueprint('v1', __name__, url_prefix='')
@@ -14,5 +14,5 @@ api = Api(
     description='O principal objetivo desta API é facilitar a manipulação do banco de dados.',
 )
 
-api.add_namespace(namespace_questions)
+api.add_namespace(namespace_photos)
 api.add_namespace(namespace_auth)

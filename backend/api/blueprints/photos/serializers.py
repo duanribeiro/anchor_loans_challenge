@@ -1,4 +1,4 @@
-from api.blueprints.game import api
+from api.blueprints.photos import api
 from flask_restplus import fields
 
 

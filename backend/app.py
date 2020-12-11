@@ -1,5 +1,5 @@
 import logging
-from api.blueprints import create_app, db
+from api.blueprints import create_app
 from api import v1_blueprint
 from flask_cors import CORS
 
@@ -9,7 +9,7 @@ app.register_blueprint(v1_blueprint)
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5003)
+    app.run(host='0.0.0.0', port=5000)
 
 else:
     gunicorn_logger = logging.getLogger('gunicorn.error')

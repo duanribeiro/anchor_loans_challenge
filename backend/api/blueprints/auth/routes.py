@@ -1,10 +1,9 @@
-from flask_restplus import Resource, Namespace
+from flask_restplus import Resource
 from api.blueprints import mongo
-from .helpers import check_password
 from .serializers import login
 import logging
+from api.blueprints.auth import api
 
-api = Namespace('auth', 'Authentication')
 logger = logging.getLogger(__name__)
 
 
