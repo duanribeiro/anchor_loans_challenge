@@ -17,7 +17,7 @@ Details of the solution
 * You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the requirements  
 
 # The Solution
-[![Python](https://img.shields.io/badge/python-3.6-blue.svg)]() [![React](https://img.shields.io/badge/node-14.15.1-red.svg)]()
+[![Python](https://img.shields.io/badge/python-3.8-blue.svg)]() [![React](https://img.shields.io/badge/node-14.15.1-red.svg)]()
 
 LINK: http://anchorlaonds-frontend.s3-website-us-east-1.amazonaws.com/
 
