@@ -14,7 +14,7 @@ class BaseConfig:
 
 
 class DevConfig(BaseConfig):
-    MONGO_URI = "mongodb+srv://duanribeiro:BJ183r32@futebol-iwbwh.mongodb.net/playground?authSource=admin"
+    MONGO_URI = "mongodb+srv://duanribeiro:<YOUR_PASSWORD>@futebol-iwbwh.mongodb.net/playground?authSource=admin"
 
 
 class ProdConfig(BaseConfig):

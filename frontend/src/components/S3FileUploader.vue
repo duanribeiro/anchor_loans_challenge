@@ -32,8 +32,8 @@
           bucketName: 'photos-archor-loans',
           dirName: '',
           region: 'us-east-1',
-          accessKeyId: 'AKIA44EE6DXNCCWWCSNH',
-          secretAccessKey: '+8VqREDRYSuLJFA8evwnXH6eEfmUWFoGrzwjklX9',
+          accessKeyId: '<YOUR_ACCESS_KEY>',
+          secretAccessKey: '<YOUR_ACCESS_KEY>,
           s3Url: this.baseURL
         }
       },
