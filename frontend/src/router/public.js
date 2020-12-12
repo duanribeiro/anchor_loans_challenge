@@ -1,19 +1,9 @@
-const LoginContainer = () => import('@/layouts/LoginContainer')
-const LoginView = () => import('@/views/LoginView')
-const PhotosView = () => import('@/views/PhotosView')
 const TheContainer = () => import('@/layouts/TheContainer')
+const PhotosView = () => import('@/views/PhotosView')
 
 const routes = [
   {
-    path: '/login',
-    component: LoginContainer,
-    children: [{
-      path: '',
-      component: LoginView
-    }]
-  },
-  {
-    path: '/raw_data',
+    path: '/photos',
     component: TheContainer,
     children: [{
       path: '',

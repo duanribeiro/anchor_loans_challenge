@@ -1,15 +1,30 @@
 import logging
-import requests
-
+from api.blueprints import mongo
+from api.blueprints.auth import api
 
 logger = logging.getLogger(__name__)
 
 
-class Questions:
+class Photos:
+    @staticmethod
+    def list_files():
+        return list(mongo.db.photos.find({}, {'_id': 0}))
 
     @staticmethod
-    def get_question():
-        response = requests.get('https://opentdb.com/api.php?amount=1&type=multiple')
-        question = response.json()['results'][0]
+    def upload_file(payload):
+        if mongo.db.photos.find_one({'url': payload.get('url')}):
+            api.abort(409, 'Photo already exists')
 
-        return question
+        mongo.db.photos.insert_one(payload)
+
+        return 'Success'
+
+    @staticmethod
+    def add_like(payload):
+        if mongo.db.photos.find_one({'url': payload.get('photo_url')}):
+            mongo.db.photos.update(
+                {'url': payload.get('photo_url')},
+                {'$inc': {'likes': 1}}
+            )
+
+        return 'Success'

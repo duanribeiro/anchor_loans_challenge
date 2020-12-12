@@ -9,19 +9,16 @@
       <router-view />
     </v-main>
 
-    <TheFooter/>
   </v-app>
 </template>
 
 <script>
 import TheHeader from './TheHeader'
-import TheFooter from './TheFooter'
 
 export default {
   name: 'TheContainer',
   components: {
     TheHeader,
-    TheFooter
   }
 }
 </script>

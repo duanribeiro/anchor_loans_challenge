@@ -4,7 +4,6 @@ import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
 import colors from 'vuetify/lib/util/colors'
 
-// This is here just in case you prefer to have all your plugins in a folder like this, otherwise its currently unused
 
 Vue.use(Vuetify)
 

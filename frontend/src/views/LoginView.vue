@@ -1,3 +1,0 @@
-<template>
-  <CardLogin/>
-</template>

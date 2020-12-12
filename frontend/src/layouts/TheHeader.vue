@@ -6,15 +6,20 @@
     flat
     dense
   >
-    <v-flex>
-      <v-toolbar-title class="orange--text">
-        My Wedding Gallery
-      </v-toolbar-title>
-    </v-flex>
+    <v-row style="padding-top: 20px">
+      <v-col cols="8">
+        <v-toolbar-title class="orange--text">
+          My Wedding Gallery
+        </v-toolbar-title>
+      </v-col>
+      <v-col cols="3">
+        <S3FileUploader/>
+      </v-col>
+      <v-col cols="1">
+        <ButtonLogin/>
+      </v-col>  
     <v-spacer />
-    
-    <ButtonUploadPhoto/>
-    <ButtonLogin/>
+    </v-row>
 
   </v-app-bar>
 </template>
